@@ -18,4 +18,9 @@ public class MyWorld extends World {
             addObject(new Coin(), Greenfoot.getRandomNumber(600), 0);    
         }
     }
+    public void addScore(int points)
+    {
+        score += points;
+        showText("Score: " + score, 50, 20);
+    }
 }
