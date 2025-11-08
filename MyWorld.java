@@ -24,6 +24,11 @@ public class MyWorld extends World {
         {
             showText("Time: " + (time / 60), 520, 20);    
         }
+        if(time == 0)
+        {
+            showText("Final score: " + score, 300, 200);
+            Greenfoot.stop();
+        }
     }
     public void addScore(int points)
     {
