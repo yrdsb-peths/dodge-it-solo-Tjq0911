@@ -23,4 +23,8 @@ public class Player extends Actor
             move(5);    
         }// Add your action code here.
     }
+    public void catchCoin()
+    {
+        ((MyWorld)getWorld()).addScore(1);
+    }
 }
